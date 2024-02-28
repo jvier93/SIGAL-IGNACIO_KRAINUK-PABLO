@@ -55,4 +55,8 @@ public class Odontologo {
                 ", apellido='" + apellido + '\'' +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
 }

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="agregamos interfaz dao">
-      <change afterPath="$PROJECT_DIR$/src/com/company/database/H2Connection.java" afterDir="false" />
+    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="agregamos modelo de Odontologo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/database/H2Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/database/H2Connection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +80,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709079731790</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="agregamos clase de conexion a h2">
+      <option name="closed" value="true" />
+      <created>1709079886799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709079886799</updated>
+    </task>
+    <task id="LOCAL-00005" summary="agregamos modelo de Odontologo">
+      <option name="closed" value="true" />
+      <created>1709080013286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709080013286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="agregamos dependencias" />
     <MESSAGE value="agregamos interfaz dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregamos interfaz dao" />
+    <MESSAGE value="agregamos clase de conexion a h2" />
+    <MESSAGE value="agregamos modelo de Odontologo" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregamos modelo de Odontologo" />
   </component>
 </project>

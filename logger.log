@@ -1,8 +1,0 @@
-[2024-02-27 22:59:48] [ INFO ] [OdontologoDaoH2Impl:47] Se creó un nuevo odontólogo: Odontologo{id=4, numMatricula=123, nombre='Pepep', apellido='Perez'}
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:47] Se creó un nuevo odontólogo: Odontologo{id=5, numMatricula=123, nombre='Pepep', apellido='Perez'}
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:114] Se busco un odontologonull
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:188] Se buscaron todos los odontologos, cantidad de resultados: 4
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:77] Se eliminio un odontologo
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:188] Se buscaron todos los odontologos, cantidad de resultados: 4
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:152] Se actualizo un OdontologoOdontologo{id=3, numMatricula=1221212313, nombre='Pepep', apellido='Perez'}
-[2024-02-27 23:15:32] [ INFO ] [OdontologoDaoH2Impl:114] Se busco un odontologoOdontologo{id=3, numMatricula=1221212313, nombre='Pepep', apellido='Perez'}

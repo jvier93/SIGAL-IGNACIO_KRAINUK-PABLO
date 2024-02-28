@@ -10,6 +10,7 @@ import java.util.List;
 public class OdontologoDaoH2Impl implements IDao<Odontologo> {
 
     private final static String SQL_INSERT_ODONTOLOGO ="INSERT INTO Odontologo (numero_matricula, nombre, apellido) VALUES (?, ?, ?)";
+    private final static String SQL_SELECT_ODONTOLOGO_BY_ID = "SELECT id, numero_matricula, nombre, apellido FROM Odontologo WHERE id = ?";
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
@@ -55,11 +56,44 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
     @Override
     public void eliminar(Integer id) {
 
+
     }
 
     @Override
     public Odontologo buscar(Integer id) {
-        return null;
+            Connection conn = null;
+            Odontologo odontologoBuscado = null;
+
+            try{
+                PreparedStatement preparedStatement = conn.prepareStatement(SQL_SELECT_ODONTOLOGO_BY_ID);
+                preparedStatement.setInt(1,id);
+
+                ResultSet resultSet = preparedStatement.executeQuery();
+
+                while (resultSet.next())
+                {
+                    odontologoBuscado = new Odontologo(resultSet.getInt(1), resultSet.getInt(2), resultSet.getString(3), resultSet.getString(4));
+                }
+
+
+            }
+            catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+            finally {
+                if (conn != null) {
+                    try {
+                        conn.close();
+                    } catch (SQLException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    //LOGGER.error(e.getMessage());
+                }
+              return odontologoBuscado;
+            }
+
+
+
     }
 
     @Override

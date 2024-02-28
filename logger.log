@@ -1,0 +1,6 @@
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:47] Se creó un nuevo odontólogo: Odontologo{id=1, numMatricula=1, nombre='Juan', apellido='Perez'}
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:47] Se creó un nuevo odontólogo: Odontologo{id=2, numMatricula=2, nombre='Ana', apellido='Gomez'}
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:188] Se buscaron todos los odontologos, cantidad de resultados: 2
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:22] Se registró un odontólogo: Odontologo{id=0, numMatricula=1, nombre='Juan', apellido='Perez'}
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:22] Se registró un odontólogo: Odontologo{id=0, numMatricula=2, nombre='Ana', apellido='Gomez'}
+[2024-02-27 23:55:10] [ INFO ] [OdontologoDaoH2Impl:53] Se buscaron todos los odontólogos.

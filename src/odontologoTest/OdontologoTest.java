@@ -43,9 +43,34 @@ public class OdontologoTest {
 
         }
 
+    @Test
+    public void testBuscarTodosLosOdontologosEnMemoria() {
+
+       //DADO
+        odontologoService = new OdontologoService(new OdontologoDaoMemoriaImpl(new ArrayList<>()));
+
+        Odontologo o1 = new Odontologo(1, "Juan", "Perez");
+        Odontologo o2 = new Odontologo(2, "Ana", "Gomez");
+
+        odontologoService.guardarOdontologo(o1);
+        odontologoService.guardarOdontologo(o2);
+
+        //CUANDO
+        List<Odontologo> todosLosOdontologos = new ArrayList<>();
+        todosLosOdontologos = odontologoService.buscarTodosLosOdontologos();
+
+
+        //ENTONCES
+        assertEquals(2, todosLosOdontologos.size());
+
 
 
     }
+
+
+
+
+}
 
 
 

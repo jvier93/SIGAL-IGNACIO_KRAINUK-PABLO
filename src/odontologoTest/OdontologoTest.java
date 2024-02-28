@@ -14,7 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class OdontologoTest {
+
+    private OdontologoService odontologoService;
 
         @Test
         public void testBuscarTodosLosOdontologosEnH2() {
@@ -22,7 +25,7 @@ public class OdontologoTest {
 
             //DADO
             H2Connection.createTable();
-            OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2Impl());
+            odontologoService = new OdontologoService(new OdontologoDaoH2Impl());
 
             Odontologo o1 = new Odontologo(1, "Juan", "Perez");
             Odontologo o2 = new Odontologo(2, "Ana", "Gomez");
@@ -39,6 +42,9 @@ public class OdontologoTest {
             assertEquals(2, todosLosOdontologos.size());
 
         }
+
+
+
     }
 
 

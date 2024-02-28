@@ -8,9 +8,10 @@ import java.util.List;
 public class OdontologoDaoMemoriaImpl {
     private final List<Odontologo> odontologos;
 
-    public OdontologoDaoMemoriaImpl(List<Odontologo> odontologo) {
-        this.odontologos = odontologo;
+    public OdontologoDaoMemoriaImpl(List<Odontologo> odontologos) {
+        this.odontologos = odontologos;
     }
+
 
     public Odontologo registrar(Odontologo odontologo) throws SQLException {
         odontologos.add(odontologo);

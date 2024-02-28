@@ -57,7 +57,7 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
                 try {
                     conn.close();
                 } catch (SQLException e) {
-                    LOGGER.error("Error al crear cerrar la coneccion: " + e.getMessage());
+                    LOGGER.error("Error al cerrar la conexion: " + e.getMessage());
                 }
 
                 }
@@ -74,20 +74,21 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
             preparedStatement.setInt(1,id);
 
             preparedStatement.executeUpdate();
+            LOGGER.info("Se eliminio un odontologo ");
 
 
         }
         catch (Exception e){
-            System.out.println(e.getMessage());
+            LOGGER.error("Error al eliminar odontólogo: " + e.getMessage());
         }
         finally {
             if (conn != null) {
                 try {
                     conn.close();
                 } catch (SQLException e) {
-                    System.out.println(e.getMessage());
+                    LOGGER.error("Error al cerrar la conexion: " + e.getMessage());
                 }
-                //LOGGER.error(e.getMessage());
+
             }
         }
 
@@ -110,19 +111,21 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
                     odontologoBuscado = new Odontologo(resultSet.getInt(1), resultSet.getInt(2), resultSet.getString(3), resultSet.getString(4));
                 }
 
+                LOGGER.info("Se busco un odontologo " + odontologoBuscado);
+
 
             }
             catch (Exception e){
-                System.out.println(e.getMessage());
+                LOGGER.error("Error al buscar ondontologo " + e.getMessage());
             }
             finally {
                 if (conn != null) {
                     try {
                         conn.close();
                     } catch (SQLException e) {
-                        System.out.println(e.getMessage());
+                        LOGGER.error("Error al cerrar la conexion: " + e.getMessage());
                     }
-                    //LOGGER.error(e.getMessage());
+
                 }
               return odontologoBuscado;
             }
@@ -146,19 +149,20 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
             preparedStatement.setInt(4, odontologo.getId());
 
             preparedStatement.execute();
+            LOGGER.info("Se actualizo un Odontologo " + odontologo);
 
         }
         catch (Exception e){
-            System.out.println(e.getMessage());
+           LOGGER.error("Error al actualizar Odontologo " + e.getMessage());
         }
         finally {
             if (conn != null) {
                 try {
                     conn.close();
                 } catch (SQLException e) {
-                    System.out.println(e.getMessage());
+                    LOGGER.error("Error al cerrar la conexion: " + e.getMessage());
                 }
-                //LOGGER.error(e.getMessage());
+
             }
         }
 
@@ -181,16 +185,20 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
                 odontologosEncontrados.add(odontologo);
             }
 
+            LOGGER.info("Se buscaron todos los odontologos, cantidad de resultados: " + odontologosEncontrados.size());
+
         }
-        catch (Exception e){}
+        catch (Exception e){
+            LOGGER.error("Error al buscar todos los Odontologos " + e.getMessage());
+        }
         finally {
             if (conn != null) {
                 try {
                     conn.close();
                 } catch (SQLException e) {
-                    System.out.println(e.getMessage());
+                   LOGGER.error("Error al cerrar la conexion " + e.getMessage());
                 }
-                //LOGGER.error(e.getMessage());
+
             }
         }
         return  odontologosEncontrados;

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="Agregamos configuracion basica de log4j">
+    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="Agregamos registro de errores al guardar odontologo en h2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/logger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoH2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoH2Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoMemoriaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoMemoriaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odontologoTest/OdontologoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/odontologoTest/OdontologoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709085621141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Agregamos registro de errores al guardar odontologo en h2">
+      <option name="closed" value="true" />
+      <created>1709085911532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709085911532</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +175,7 @@
     <MESSAGE value="completamos buscar ondontologo por id en h2 y sus pruebas en main" />
     <MESSAGE value="finalizado metodos de persistencia en h2" />
     <MESSAGE value="Agregamos configuracion basica de log4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregamos configuracion basica de log4j" />
+    <MESSAGE value="Agregamos registro de errores al guardar odontologo en h2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregamos registro de errores al guardar odontologo en h2" />
   </component>
 </project>

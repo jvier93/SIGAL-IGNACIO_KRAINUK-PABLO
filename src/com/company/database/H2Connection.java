@@ -11,7 +11,7 @@ public class H2Connection {
     private final static String DB_USER = "sa";
     private final static String DB_PASSWORD = "";
 
-    private static final String SQL_TABLE_CREATE = "DROP TABLE IF EXISTS Odontologos;\n" +
+    private static final String SQL_TABLE_CREATE = "DROP TABLE IF EXISTS Odontologo;\n" +
             "CREATE TABLE Odontologo (\n" +
             "     id INT AUTO_INCREMENT PRIMARY KEY,\n" +
             "    numero_matricula INT,\n" +

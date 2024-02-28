@@ -3,12 +3,15 @@ package com.company.daos.impl;
 import com.company.daos.IDao;
 import com.company.database.H2Connection;
 import com.company.modelos.Odontologo;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDaoH2Impl implements IDao<Odontologo> {
+
+    private final Logger LOGGER = Logger.getLogger(OdontologoDaoH2Impl.class);
 
     private final static String SQL_INSERT_ODONTOLOGO ="INSERT INTO Odontologo (numero_matricula, nombre, apellido) VALUES (?, ?, ?)";
     private final static String SQL_SELECT_ODONTOLOGO_BY_ID = "SELECT id, numero_matricula, nombre, apellido FROM Odontologo WHERE id = ?";
@@ -33,12 +36,15 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
 
             preparedStatement.execute();
 
+
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
 
             while (resultSet.next())
             {
                 odontologoCreado = new Odontologo(resultSet.getInt(1), odontologo.getNumMatricula(), odontologo.getNombre(), odontologo.getApellido());
             }
+
+            LOGGER.info("Se creó un nuevo odontólogo: " + odontologoCreado);
 
 
         }

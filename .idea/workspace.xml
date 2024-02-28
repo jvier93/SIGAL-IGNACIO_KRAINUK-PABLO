@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="completamos buscar ondontologo por id en h2">
+    <list default="true" id="2e609568-0c57-4272-91f2-757561a360dd" name="Changes" comment="completamos buscar ondontologo por id en h2 y sus pruebas en main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIGAL-IGNACIO_KRAINUK-PABLO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SIGAL-IGNACIO_KRAINUK-PABLO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/daos/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/daos/IDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoH2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/daos/impl/OdontologoDaoH2Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/servicios/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/servicios/OdontologoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/odontologoTest/OdontologoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/odontologoTest/OdontologoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -122,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709082081093</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="completamos buscar ondontologo por id en h2 y sus pruebas en main">
+      <option name="closed" value="true" />
+      <created>1709082334953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709082334953</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +149,7 @@
     <MESSAGE value="completamos clase de coneccion" />
     <MESSAGE value="completamos guardado de odontologo" />
     <MESSAGE value="completamos buscar ondontologo por id en h2" />
-    <option name="LAST_COMMIT_MESSAGE" value="completamos buscar ondontologo por id en h2" />
+    <MESSAGE value="completamos buscar ondontologo por id en h2 y sus pruebas en main" />
+    <option name="LAST_COMMIT_MESSAGE" value="completamos buscar ondontologo por id en h2 y sus pruebas en main" />
   </component>
 </project>

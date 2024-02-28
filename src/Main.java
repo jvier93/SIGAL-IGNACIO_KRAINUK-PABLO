@@ -10,9 +10,16 @@ public class Main {
 
 
         Odontologo odontologo1 = new Odontologo(123,"Pepep", "Perez");
+        Odontologo odontologo2 = new Odontologo(3,1221212313,"Pepep", "Perez");
         OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2Impl());
         System.out.println(odontologoService.guardarOdontologo(odontologo1));
         System.out.println(odontologoService.buscarOdontologoPorId(10));
+        System.out.println(odontologoService.buscarTodosLosOdontologos().size());
+        odontologoService.eliminarOdontologo(1);
+        System.out.println(odontologoService.buscarTodosLosOdontologos().size());
+        odontologoService.actualizarOdontologo(odontologo2);
+        System.out.println(odontologoService.buscarOdontologoPorId(3));
+
 
 
 

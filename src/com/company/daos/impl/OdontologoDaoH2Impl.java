@@ -49,16 +49,17 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
 
         }
         catch (Exception e){
-            e.printStackTrace();
+            LOGGER.error("Error al crear nuevo odontólogo: " + e.getMessage());
+
         }
         finally {
             if (conn != null) {
                 try {
                     conn.close();
                 } catch (SQLException e) {
-                    System.out.println(e.getMessage());
+                    LOGGER.error("Error al crear cerrar la coneccion: " + e.getMessage());
                 }
-                    //LOGGER.error(e.getMessage());
+
                 }
         }
         return odontologoCreado;

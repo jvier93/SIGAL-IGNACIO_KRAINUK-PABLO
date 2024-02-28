@@ -36,7 +36,7 @@ public class OdontologoDaoMemoriaImpl {
         odontologos.remove(odontologoAEliminar);
     }
 
-    public static List<Odontologo> buscarTodos() {
+    public List<Odontologo> buscarTodos() {
         return odontologos;
     }
 

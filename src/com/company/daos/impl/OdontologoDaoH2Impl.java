@@ -65,6 +65,7 @@ public class OdontologoDaoH2Impl implements IDao<Odontologo> {
             Odontologo odontologoBuscado = null;
 
             try{
+                conn = H2Connection.getConnection();
                 PreparedStatement preparedStatement = conn.prepareStatement(SQL_SELECT_ODONTOLOGO_BY_ID);
                 preparedStatement.setInt(1,id);
 

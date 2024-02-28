@@ -8,10 +8,11 @@ import com.company.servicios.OdontologoService;
 public class Main {
     public static void main(String[] args) {
 
-        H2Connection.createTable();
+
         Odontologo odontologo1 = new Odontologo(123,"Pepep", "Perez");
         OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2Impl());
         System.out.println(odontologoService.guardarOdontologo(odontologo1));
+        System.out.println(odontologoService.buscarOdontologoPorId(10));
 
 
 

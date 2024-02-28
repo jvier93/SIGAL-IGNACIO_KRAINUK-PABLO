@@ -14,4 +14,8 @@ public class OdontologoService {
     public Odontologo guardarOdontologo(Odontologo odontologo){
         return  odontologoIDao.guardar(odontologo);
     }
+
+    public Odontologo buscarOdontologoPorId(Integer id){
+        return  odontologoIDao.buscar(id);
+    }
 }
